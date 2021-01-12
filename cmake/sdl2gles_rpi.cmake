@@ -17,7 +17,7 @@ link_directories(
     "${sdl_root}/lib"
 )
 
-add_definitions(-O3 -DSDL2 -DWITH_OPENGLES -mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard)
+add_definitions(-O2 -DSDL2 -DWITH_OPENGLES -march=armv7-a -mfpu=neon-vfpv4 -mfloat-abi=hard)
 #add_definitions(-O0 -ggdb -DSDL2 -DWITH_OPENGLES)
  
 # Location for Cannonball to create save files
