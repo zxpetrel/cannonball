@@ -14,7 +14,7 @@ link_directories(
     "${sdl_root}/lib"
 )
 
-add_definitions(-O3 -DSDL2 -mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard)
+add_definitions(-O2 -DSDL2 -march=armv7-a -mfpu=neon-vfpv4 -mfloat-abi=hard)
  
 # Location for Cannonball to create save files
 # Used to auto-generate setup.hpp with various file paths
